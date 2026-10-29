@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Szkolenie BHP</title>
+    <link rel="stylesheet" href="output.css">
+</head>
+<body class="min-h-screen bg-[#0b1020] text-slate-100">
+    <div class="flex min-h-screen flex-col">
+        <header class="flex min-h-20 items-center justify-between gap-2 border-b border-slate-800 bg-[#111827] px-3 sm:gap-4 sm:px-5 md:h-20 md:px-12">
+            <a href="#home" class="flex shrink-0 items-center gap-3 text-xl font-bold tracking-wide md:text-2xl" aria-label="VOMA — strona główna">
+                <img src="/assets/logo.svg" alt="" class="h-9 w-9 md:h-10 md:w-10">
+                <span>VOMA</span>
+            </a>
+            <nav class="hidden items-center gap-8 text-sm text-slate-300 md:flex" aria-label="Menu główne">
+                <a href="#link1" class="transition hover:text-white">Link 1</a>
+                <a href="#link2" class="transition hover:text-white">Link 2</a>
+                <a href="#link3" class="transition hover:text-white">Link 3</a>
+            </nav>
+            <button type="button" class="flex shrink-0 items-center gap-2 rounded-xl border border-slate-700 px-3 py-2 text-sm text-slate-200 transition hover:border-slate-500 hover:bg-slate-800" aria-label="Ustawienia">
+                <svg aria-hidden="true" class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="12" r="3"/><path stroke-linecap="round" stroke-linejoin="round" d="m19.4 15 .1.1a1.7 1.7 0 0 1-2.4 2.4l-.1-.1a1.7 1.7 0 0 0-2.9 1.2v.2a1.7 1.7 0 0 1-3.4 0v-.2a1.7 1.7 0 0 0-2.9-1.2l-.1.1a1.7 1.7 0 1 1-2.4-2.4l.1-.1a1.7 1.7 0 0 0-1.2-2.9H4a1.7 1.7 0 0 1 0-3.4h.2a1.7 1.7 0 0 0 1.2-2.9l-.1-.1a1.7 1.7 0 1 1 2.4-2.4l.1.1a1.7 1.7 0 0 0 2.9-1.2V4a1.7 1.7 0 0 1 3.4 0v.2a1.7 1.7 0 0 0 2.9 1.2l.1-.1a1.7 1.7 0 1 1 2.4 2.4l-.1.1a1.7 1.7 0 0 0 1.2 2.9h.2a1.7 1.7 0 0 1 0 3.4h-.2a1.7 1.7 0 0 0-1.2.9Z"/></svg>
+                <span class="hidden sm:inline">Ustawienia</span>
+            </button>
+        </header>
+
+        <main class="mx-auto grid w-full max-w-lg flex-1 content-center gap-8 px-6 py-8 md:max-w-6xl md:grid-cols-2 md:items-center md:gap-16 md:px-12 md:py-12">
+            <section class="order-1 md:order-2 md:border-l md:border-slate-700 md:py-12 md:pl-16">
+                <h1 class="mb-4 text-center text-3xl font-bold tracking-tight md:mb-6 md:text-left md:text-5xl">Szkolenie BHP</h1>
+            </section>
+            <section class="order-2 md:order-1">
+            <form class="rounded-3xl border border-slate-800 bg-[#111827] p-6 shadow-xl md:p-10" onsubmit="return false">
+                <label class="mb-5 block text-center text-lg md:mb-6 md:text-xl" for="code-1">Kod uwierzytelniający</label>
+                <div class="mb-5 grid grid-cols-6 gap-2 md:mb-6 md:gap-3" role="group" aria-label="6-cyfrowy kod">
+                    <input id="code-1" aria-label="Cyfra 1 z 6" inputmode="numeric" autocomplete="one-time-code" maxlength="1" class="h-14 min-w-0 w-full rounded-xl border border-slate-700 bg-[#0f172a] text-center text-2xl outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 md:h-16 md:text-3xl">
+                    <input aria-label="Cyfra 2 z 6" inputmode="numeric" maxlength="1" class="h-14 min-w-0 w-full rounded-xl border border-slate-700 bg-[#0f172a] text-center text-2xl outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 md:h-16 md:text-3xl">
+                    <input aria-label="Cyfra 3 z 6" inputmode="numeric" maxlength="1" class="h-14 min-w-0 w-full rounded-xl border border-slate-700 bg-[#0f172a] text-center text-2xl outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 md:h-16 md:text-3xl">
+                    <input aria-label="Cyfra 4 z 6" inputmode="numeric" maxlength="1" class="h-14 min-w-0 w-full rounded-xl border border-slate-700 bg-[#0f172a] text-center text-2xl outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 md:h-16 md:text-3xl">
+                    <input aria-label="Cyfra 5 z 6" inputmode="numeric" maxlength="1" class="h-14 min-w-0 w-full rounded-xl border border-slate-700 bg-[#0f172a] text-center text-2xl outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 md:h-16 md:text-3xl">
+                    <input aria-label="Cyfra 6 z 6" inputmode="numeric" maxlength="1" class="h-14 min-w-0 w-full rounded-xl border border-slate-700 bg-[#0f172a] text-center text-2xl outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 md:h-16 md:text-3xl">
+                </div>
+                <button type="submit" class="w-full rounded-2xl bg-indigo-600 py-4 font-bold shadow-lg shadow-indigo-950/50 transition hover:bg-indigo-500 md:py-5 md:text-lg">Dołącz</button>
+            </form>
+            </section>
+        </main>
+
+        <footer class="mx-auto mb-5 mt-8 w-[calc(100%-3rem)] max-w-6xl border-t border-slate-800 pt-4 text-center text-xs text-slate-500 md:mb-6">
+            <nav class="mb-4 flex justify-center gap-6 text-sm text-slate-300 md:hidden" aria-label="Menu dolne">
+                <a href="#link1" class="transition hover:text-[hsl(0,0%,90%)]">Link 1</a>
+                <a href="#link2" class="transition hover:text-[hsl(0,0%,90%)]">Link 2</a>
+                <a href="#link3" class="transition hover:text-[hsl(0,0%,90%)]">Link 3</a>
+            </nav>
+            <p>© 2026 VOMA · Quiz BHP</p>
+        </footer>
+    </div>
+    <script>
+        const codeBoxes = [...document.querySelectorAll('[role="group"] input')];
+        codeBoxes.forEach((box, index) => {
+            box.addEventListener('input', () => {
+                box.value = box.value.replace(/\D/g, '').slice(-1);
+                if (box.value && index < codeBoxes.length - 1) codeBoxes[index + 1].focus();
+            });
+            box.addEventListener('keydown', event => {
+                if (event.key === 'Backspace' && !box.value && index > 0) codeBoxes[index - 1].focus();
+                if (event.key === 'ArrowLeft' && index > 0) codeBoxes[index - 1].focus();
+                if (event.key === 'ArrowRight' && index < codeBoxes.length - 1) codeBoxes[index + 1].focus();
+            });
+            box.addEventListener('paste', event => {
+                const digits = event.clipboardData.getData('text').replace(/\D/g, '').slice(0, 6);
+                if (!digits) return;
+                event.preventDefault();
+                digits.split('').forEach((digit, i) => { if (codeBoxes[i]) codeBoxes[i].value = digit; });
+                codeBoxes[Math.min(digits.length, 5)].focus();
+            });
+        });
+    </script>
+</body>
+</html>
