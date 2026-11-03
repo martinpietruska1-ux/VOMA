@@ -1,6 +1,10 @@
 {
-  "dependencies": {
-    "@tailwindcss/cli": "^4.3.3",
-    "tailwindcss": "^4.3.3"
-  }
+    "dependencies":  {
+                         "@tailwindcss/cli":  "^4.3.3",
+                         "tailwindcss":  "^4.3.3"
+                     },
+    "scripts":  {
+                    "start":  "node server.js",
+                    "build:css":  "tailwindcss -i input.css -o public/output.css"
+                }
 }
